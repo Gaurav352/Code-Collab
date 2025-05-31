@@ -17,7 +17,8 @@ A collaborative, real-time code editor where users can seamlessly code together.
 ## 💻Tech Stack
 - **Frontend**: React, Tailwind CSS, Zustand 
 - **Backend**: Node.js, Express  
-- **Real-time Communication**: Socket.IO  
+- **Real-time Communication**: Socket.IO
+- **Code execution**:Piston API
 - **Editor**: Monaco Editor (for syntax highlighting)  
 
 
