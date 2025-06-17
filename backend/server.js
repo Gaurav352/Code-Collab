@@ -13,16 +13,21 @@ const io = new Server(server);
 const __dirname = path.resolve();
 
 // ======================== STATIC FRONTEND SERVING ========================
-if(process.env.NODE_ENV === "production"){
+
 const FRONTEND_PATH = path.join(__dirname, "../frontend/dist");
 app.use(express.static(FRONTEND_PATH));
 
 // Handle client-side routing
-app.get("/", (req, res) => {
+// Serve static files from frontend
+app.use(express.static(FRONTEND_PATH));
+
+// ✅ Use `.use()` as a catch-all fallback
+app.use((req, res) => {
   res.sendFile(path.join(FRONTEND_PATH, "index.html"));
 });
 
-}
+
+
 // ======================== SOCKET.IO LOGIC (UNCHANGED) ========================
 const userSocketMap = {};
 
