@@ -1,0 +1,25 @@
+{
+  "name": "code-collab",
+  "version": "1.0.0",
+  "description": "![Logo](./public/Code-Collab.png)\r ## Description",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaurav352/Code-Collab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gaurav352/Code-Collab/issues"
+  },
+  "homepage": "https://github.com/Gaurav352/Code-Collab#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
