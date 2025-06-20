@@ -1,5 +1,5 @@
 # 🧑‍💻Collaborative Code Editor
-![Logo](./public/Code-Collab.png)
+![Logo](./frontend/public/Code-Collab.png)
 ## Description
 
 A collaborative, real-time code editor where users can seamlessly code together. It provides a platform for multiple users to enter a room, share a unique room ID, and collaborate on code simultaneously.
